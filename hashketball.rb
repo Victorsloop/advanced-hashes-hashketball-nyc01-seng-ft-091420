@@ -169,4 +169,12 @@ end
     return players_numbers
   end 
   
-  
+  def player_stats(playerx)
+    game_hash.each do |location, stats|
+      stats[:players].map do |player_stats|
+        if player_stats[:player_name] == playerx
+          return player_stats
+        end 
+      end 
+    end 
+  end 
