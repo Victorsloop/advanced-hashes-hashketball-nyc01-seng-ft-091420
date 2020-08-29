@@ -185,7 +185,7 @@ end
     game_hash.each do |location,stats|
       stats[:players].each do |player_stats|
         if 
-          player_stats{:shoe] > shoe
+          player_stats[:shoe] > shoe
           shoe = player_stats[:shoe]
           rebounds = player_stats[:rebounds]
         end 
